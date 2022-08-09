@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> 
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">    
     <!-- Зовнішній файл стилю -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>   
     <!-- Шапка -->
-    <header>
+    <!-- <header>
     <div class="header-nav container">
         <a class="logo" href="./"><span>Web</span>Studio</a>
         <nav>             
         <ul class="nav-list">               
-            <li class="list-item"><a class="link link-current" href="./">Студія</a></li>
+            <li class="list-item"><a class="link current" href="./">Студія</a></li>
             <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
             <li class="list-item"><a class="link" href="">Контакти</a></li>
-            <li class="list-item"><a class="link" href="./square.html">Квадрат</a></li>
         </ul> 
         </nav>
         <ul class="contacts-nav">
@@ -40,7 +38,7 @@
                 +38 096 111 11 11</a></li>
         </ul>
     </div>
-    </header>
+    </header> -->
     <!-- Основна секція -->
     <main>
     <!-- Секція герой -->
@@ -56,6 +54,69 @@
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-button" data-modal-close></button>
+                    <!-- Форма модального вікна -->
+                    <form class="form js-speaker-form" autocomplete="on">
+                        <h3 class="title">Залиште свої дані, ми Вам зателефонуємо</h3>
+                        <ul class="fields">
+                            <li class="field">
+                                <label for="user-name">Ім'я</label>
+                                    <input 
+                                        class="form-field" 
+                                        type="text" 
+                                        name="user-name" 
+                                        id="user-name" >
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./img/icons.svg#person"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="user-tel">Телефон</label>
+                                    <input 
+                                        class="form-field" 
+                                        type="tel" 
+                                        name="user-tel" 
+                                        id="user-tel" 
+                                        autofocus >        
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./img/icons.svg#phone"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="user-mail" >Пошта</label>
+                                    <input 
+                                        class="form-field" 
+                                        type="email" 
+                                        name="user-mail" 
+                                        id="user-mail">
+                                <svg width="18" height="18" class="form-icon">
+                                    <use href="./img/icons.svg#email"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="comments">Коментарі</label>
+                                    <textarea 
+                                        class="textarea" 
+                                        name="comments" 
+                                        id="comments"
+                                        rows="10" 
+                                        placeholder="Введіть коментар">
+                            </textarea>
+                            </li>
+                        </ul>
+                        <div class="checkbox">
+                            <label class="field-label" for="checkbox">
+                                <input class="field-checkbox" type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
+                                <svg class="checkbox-icon" width="16" height="15">
+                                    <use href="./img/icons.svg#icon-check"></use>
+                                </svg>
+                                Погоджуюсь з розсилкою і приймаю 
+                               <a href="./" >Умови договору</a> 
+                            </label>
+                        </div>
+                            
+                            <button type="submit" class="hero-button btn">Надіслати</button>
+                    
+                    </form>
                 </div>
             </div>
         </section>
@@ -105,33 +166,33 @@
             </div>
         </section>
     <!-- Секція чим ми займаємось -->
-        <section class="section">
+        <section class="section work">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
             <ul class="image">
-                <li>
+                <li class="image-work">
                     <div class="thumb">
                         <img src="./img/desktop.jpg" alt="Зображення планшету">
                         <div class="thumb-text">
                             <p>ДЕСКТОПНІ ЗАСТОСУНКИ</p>
-                        </div> 
-                    </div>
+                        </div>
+                    </div>                    
                 </li>
-                <li>
+                <li class="image-work">
                     <div class="thumb">
                         <img src="./img/laptop.jpg" alt="Зображення планшету">
                         <div class="thumb-text">
                             <p>МОБІЛЬНІ ЗАСТОСУНКИ</p>
                         </div>
-                    </div>
+                    </div>                    
                 </li>
-                <li>
+                <li class="image-work">
                     <div class="thumb">
                         <img src="./img/desctop-1.jpg" alt="Зображення планшету">
                         <div class="thumb-text">
                             <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                         </div>
-                    </div>
+                    </div>                    
                 </li>
             </ul>
             </div>
@@ -281,6 +342,7 @@
             </ul>
             </div>
         </section>   
+        <!-- Постійні клієнти -->
         <section class="section">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
@@ -333,7 +395,7 @@
     </main>
         <!-- Футер -->
         <footer class="footer">
-            <div class="container footer-items">
+            <div class="container footer-container">
                 <!-- Лого та контакти -->
                 <div class="footer-contacts">
                 <a class="footer-logo" href=""><span>Web</span>Studio</a>
@@ -360,7 +422,7 @@
                         <a class="social-link" href="" >
                             <svg class="social-icon" width="20" height="16">
                                     <use href="./img/icons.svg#icon-tweeter"></use>
-                                </svg> 
+                                </sv> 
                             </a> 
                         </li>
                     <li  class="network-item" > 
@@ -379,5 +441,8 @@
         </div>
 </footer>
 <script src="./js/modal.js" type="module"></script>
+<script src="./js/form.js" type="module"></script>
 </body>
 </html>
+
+
