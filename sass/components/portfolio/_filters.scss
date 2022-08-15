@@ -1,57 +1,57 @@
-/*filters*/
-  
+
 .filter{
-@media (min-width: $mobile){
-display: flex;
-flex-wrap: wrap;
-margin-bottom: 40px;
-margin-top: -15px;
-margin-left: -8px;
-}
-}
-
-.filter-item{
- @media (min-width: $mobile) and (max-width:767px){
-  margin-top: 15px;
-  margin-left: 8px;
-
- }
-
-
-@media(min-width: $tablet){
+  @media (min-width: $mobile) {
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  margin-bottom: 30px;
-
- &:not(:last-child){
-    margin-right: 8px;
- }
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-left: -8px;  
   }
-
-@media (min-width:$desktop){
-  margin-bottom: 50px;
+  }
+  .filter-item{
+    @media  (min-width: $mobile) and (max-width:767px){
+      margin-top: 15px;
+      margin-left: 8px;       
+    }
   
-}
-}
-  .filter-link{
-    display: inline-block;
-    border-radius: 4px;
-    min-width: 73px;
-    height: 38px;
-    padding: 6px 22px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    color: var(--title-text-color);
-    background-color: var(--background-button);
-    &:hover,
-    &:focus{
-    background-color: var(--accent-color);
-    color: var(--background-color);
-}
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+  
+      margin-bottom: 30px;
+  
+      &:not(:last-child){
+        margin-right: 8px;
+      }
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
   }
+    
+    .filter-link{
+      display: inline-block;
+      border-radius: 4px;
+      min-width: 73px;
+      height: 38px;
+      padding: 6px 22px;
+  
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.03em;
+  
+      color: #212121;
+  
+      color: var(--title-text-color);
+      background-color: var(--background-button);
+  
+      &:hover,
+      &:focus{
+      background-color: var(--accent-color);
+      color: var(--background-color);
+  }
+    }
