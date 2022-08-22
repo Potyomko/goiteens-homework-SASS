@@ -1,0 +1,25 @@
+.networks-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @media (min-width:$tablet) {
+        display: none;
+    }
+}
+.networks-icon:not(:last-child)::after{
+  content: "";
+  width: 1px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.networks-link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
